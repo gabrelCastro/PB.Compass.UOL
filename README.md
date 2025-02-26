@@ -1,6 +1,6 @@
 ## Apresentação ! 
 
-<img src="/assets/minhaFoto.webp" alt="Imagem Redonda" style="width: 150px; height: 250px;">
+<img src="/assets/minhaFoto.webp" alt="Imagem Redonda" style="width: 200px; height: 300px;">
 
 
 Olá, meu nome é <b>Gabriel Ferreira de Castro!</b>
