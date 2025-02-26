@@ -1,19 +1,3 @@
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lalezar&family=Viga&display=swap');
-
-    *{
-        font-family: 'Lalezar';
-        font-weight: 200;
-        font-style: normal;
-    }
-
-    .secaoHabilidades{
-        margin-left:50px
-    }
-
-</style>
-
-
 ## Apresentação ! 
 
 <img src="/assets/minhaFoto.webp" alt="Imagem Redonda" style="border: 3px solid blue; border-radius:10px; width: 150px; height: 250px;">
