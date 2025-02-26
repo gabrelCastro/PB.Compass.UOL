@@ -17,7 +17,7 @@ Olá, meu nome é <b>Gabriel Ferreira de Castro!</b>
 
 :computer: MEU SITE -> gabrielferreiradecastro.com.br
 
-:boom: HABILIDADES: <p style="margin-left:50px;"> 📋 BACK-END: JAVASCRIPT - EXPRESS,SEQUELIZE(ORM)</p>
+:boom: HABILIDADES: <p style="margin-left:50px;">> 📋 BACK-END: JAVASCRIPT - EXPRESS,SEQUELIZE(ORM)</p>
 <p style="margin-left:50px;">> 🎨 FRONT-END: HTML,CSS e JavaScript</p>
 <p style="margin-left:50px;">> 🎨📋 FULLSTACK: LARAVEL (FRAMEWORK PHP)</p>
 
