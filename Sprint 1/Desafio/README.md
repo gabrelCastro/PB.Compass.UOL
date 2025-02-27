@@ -8,27 +8,29 @@
     <br>
     Na tabela tb_locacao pode-se perceber que em uma locação sempre vai existir um vendedor, um carro e um cliente na locação. No modelo relacional existe um tipo de relacionamento chamado ternário. 
     <br>
-    ![Relacionamento Ternario](../Evidencias/ternario.png)
+
+![Relacionamento Ternario](../Evidencias/ternario.png)
 
     Nesse modelo de relacionamento, a interdependência é fundamental para descrever o fato. Nesse caso a relação é de locação, portando é preciso que exista um vendedor, um cliente e um carro na relação.
-    <br>
+<br>
+
     Com relação a normalização..
 
-    ### Primeira Forma Normal
+### Primeira Forma Normal
 
     A tabela atende a primeira forma normal, pois não existe nenhum atributo com valor duplicado.
 
-    ### Segunda Forma Normal
+### Segunda Forma Normal
 
     Como já existe um idLocacao e ele é a chave primária da locação, a tabela também está na segunda forma normal.
 
-    ### Terceira Forma Normal
+### Terceira Forma Normal
 
     Aqui se encontram os problemas, pois existem muitos dados que apenas dependem de um ID que é chave estrangeira na tabela, ou seja, é possível de se criar uma tabela separada.
     
-    <br>
+<br>
 
-    ![problemas](../Evidencias/problemas.png)
+![problemas](../Evidencias/problemas.png)
 
 ## A partir da tabela, desenvolver uma modelagem dimensional
 ### [Arquivos](etapa-2)
@@ -36,42 +38,42 @@
 <br>
 
 
-    ![Modelagem Relacional](../Evidencias/modelagemRelacional.png)
+![Modelagem Relacional](../Evidencias/modelagemRelacional.png)
 
-    #### Relacionamentos
+#### Relacionamentos
 
-    O relacionamento ternário, já mencionado. Nesse caso, como já existia um idLocacao, as chaves de tb_cliente,tb_carro e tb_vendedor são estrangeiras e tb_locacao não possui chave composta.
+O relacionamento ternário, já mencionado. Nesse caso, como já existia um idLocacao, as chaves de tb_cliente,tb_carro e tb_vendedor são estrangeiras e tb_locacao não possui chave composta.
 
-    <br>
+<br>
 
-    ![Relacionamento Ternário](../Evidencias/relacionamentoPrincipal.png)
+![Relacionamento Ternário](../Evidencias/relacionamentoPrincipal.png)
 
-    <br>
+<br>
 
-    Nesse relacionamento, um carro pode ter um tipo de combustível, já um tipo de combustível pode estar em vários carros. O idCombustível é chave estrangeira não primária na tabela carro.
+Nesse relacionamento, um carro pode ter um tipo de combustível, já um tipo de combustível pode estar em vários carros. O idCombustível é chave estrangeira não primária na tabela carro.
 
-    <br>
+<br>
 
-    ![Carro e combustível](../Evidencias/carroCombustivel.png)
+![Carro e combustível](../Evidencias/carroCombustivel.png)
 
-    <br>
+<br>
 
-    Nesse caso, esse relacionamento poderia ser separado e dados do endereço podiam estar juntos na tabela cliente. Mesmo assim, a preferência por separar veio com o objetivo de tornar mais rápida as consultadas apenas do endereço do cliente. Nessa situação não temos a linha tracejada, temos a linha contínua e isso acontece pois idCliente é chave estrangeira e primária na tabela de endereço.
+Nesse caso, esse relacionamento poderia ser separado e dados do endereço podiam estar juntos na tabela cliente. Mesmo assim, a preferência por separar veio com o objetivo de tornar mais rápida as consultadas apenas do endereço do cliente. Nessa situação não temos a linha tracejada, temos a linha contínua e isso acontece pois idCliente é chave estrangeira e primária na tabela de endereço.
 
-    <br>
+<br>
 
 
-    ![alt text](../Evidencias/clienteEndereco.png)
+![alt text](../Evidencias/clienteEndereco.png)
 
-    ## Modelagem DIMENSIONAL
+## Modelagem DIMENSIONAL
 
-    ![Modelagem Dimensional](../Evidencias/modelagemDimensional.png)
+![Modelagem Dimensional](../Evidencias/modelagemDimensional.png)
 
-    <br>
+<br>
 
-    Como é possível observar, o Star Schema contém as dimensões tempo,cliente,carro e vendedor. A tabela fato diz respeito à locação.
+Como é possível observar, o Star Schema contém as dimensões tempo,cliente,carro e vendedor. A tabela fato diz respeito à locação.
 
-    Em relação a modelagem relacional, alguns atributos foram agrupados em uma só tabela, no caso de cliente e no caso de carro, para facilitar a filtragem e a obtenção dos dados. Em relação da nova tabela dimensão (tempo), foi criada para que haja a filtragem pelo tempo tanto de locação quanto de entrega do veículo.
+Em relação a modelagem relacional, alguns atributos foram agrupados em uma só tabela, no caso de cliente e no caso de carro, para facilitar a filtragem e a obtenção dos dados. Em relação da nova tabela dimensão (tempo), foi criada para que haja a filtragem pelo tempo tanto de locação quanto de entrega do veículo.
 
 
 ## Modelagem no SQL
