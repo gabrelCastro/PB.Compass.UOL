@@ -84,16 +84,10 @@
 # Evidências
 
 
-Ao executar o código do exercício ... observei que ... conforme podemos ver na imagem a seguir:
-
-![Evidencia 1](./Evidencias/sample.webp)
+[Fotos de Confirmação](./Exercicios/Evidencias)
 
 
-# Certificados
 
+# DESAFIO
 
-Certificado do Curso ABC
-
-![Curso ABC](./Certificados/sample.png)
-
-
+[DESAFIO](./Desafio)
