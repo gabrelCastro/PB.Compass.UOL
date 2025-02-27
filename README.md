@@ -25,7 +25,7 @@ Olá, meu nome é <b>Gabriel Ferreira de Castro!</b>
 
 <br>
 
-[![My Skills](https://skillicons.dev/icons?i=js,express,html,laravel,css,cpp,git	)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,express,html,laravel,mysql,php,css,cpp,git	)](https://skillicons.dev)
 
 
 
