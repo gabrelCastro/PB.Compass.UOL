@@ -1,7 +1,10 @@
 # Etapas
 
 
-1. A partir da tabela, desenvolver uma modelagem relacional [Etapa I](etapa-1)
+## A partir da tabela, desenvolver uma modelagem relacional
+### [Arquivos](etapa-1)
+
+<br>
     <br>
     Na tabela tb_locacao pode-se perceber que em uma locação sempre vai existir um vendedor, um carro e um cliente na locação. No modelo relacional existe um tipo de relacionamento chamado ternário. 
     <br>
@@ -27,7 +30,10 @@
 
     ![problemas](../Evidencias/problemas.png)
 
-    #### Modelagem relacional (Modelo lógico)
+## A partir da tabela, desenvolver uma modelagem dimensional
+### [Arquivos](etapa-2)
+
+<br>
 
 
     ![Modelagem Relacional](../Evidencias/modelagemRelacional.png)
@@ -68,7 +74,10 @@
     Em relação a modelagem relacional, alguns atributos foram agrupados em uma só tabela, no caso de cliente e no caso de carro, para facilitar a filtragem e a obtenção dos dados. Em relação da nova tabela dimensão (tempo), foi criada para que haja a filtragem pelo tempo tanto de locação quanto de entrega do veículo.
 
 
-### MODELAGEM NO SQL
+## Modelagem no SQL
+### [Arquivos](etapa-3)
+
+<br>
 
 Para separar as tabelas e criar novas, eu utilizei o comando CREATE TABLE e depois inseri dados com SELECT. É importante lembrar que as chaves estrangeiras não podem ser nulas de forma alguma. Outra adversidade foi o caso das datas, que estavam ser formatação.
 
