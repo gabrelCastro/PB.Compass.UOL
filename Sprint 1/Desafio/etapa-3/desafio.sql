@@ -1,7 +1,6 @@
 PRAGMA foreign_keys = ON;
 
 -- RELACIONAL
-
 CREATE TABLE tb_cliente(
 	idCliente INTEGER PRIMARY KEY,
 	nomeCliente VARCHAR(100)
@@ -80,10 +79,7 @@ SELECT idLocacao,idCarro,idVendedor,qtdDiaria,vlrDiaria,idCliente,DATE(
 ) as dataEntrega ,horaEntrega FROM tb_locacao;
 
 
-
-
 -- DIMENSIONAL
-
 CREATE VIEW dim_carro AS
 SELECT tca.*,tc.tipoCombustivel FROM tb_carro tca LEFT JOIN tb_combustivel tc ON tca.idcombustivel = tc.idcombustivel;
 
@@ -94,10 +90,9 @@ CREATE VIEW dim_vendedor AS
 SELECT * FROM tb_vendedor tv ;
 
 CREATE VIEW tf_locacao AS
-SELECT * FROM tb_locacaoR;
+SELECT idLocacao,idCarro,idVendedor,qtdDiaria,vlrDiaria FROM tb_locacaoR;
 
 CREATE VIEW dim_cliente AS
 SELECT * FROM tb_cliente tc LEFT JOIN tb_cliente_endereco tce ON tce.idCliente = tc.idCliente;
-
 
 
