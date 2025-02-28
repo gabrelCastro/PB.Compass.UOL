@@ -76,9 +76,16 @@
 [Resposta Ex16.](./Exercicios/ex16.sql)
 
 
+#### Exercício de Exportação dos dados
 
+###### As seleções pedidas para exportação
 
+[SELEÇÕES](selects.sql)
 
+###### Dados obtidos exportados para CSV
+
+[Editoras mais usadas](./Exercicios/ExercicioExportaçãoDados/dadosEditoras.csv)
+[Livros mais caros](./Exercicios/ExercicioExportaçãoDados/dadosLivros.csv)
 
 
 # Evidências
