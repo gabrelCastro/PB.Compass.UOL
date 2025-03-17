@@ -58,6 +58,8 @@ dataFrame.sort_values(by='Reviews',ascending=False,inplace=True) # Ordenando os 
 dataFrame[['App','Reviews']].head(10) # Printando os 5 aplicativos com mais reviews
 
 ```
+![Categorias](../Evidencias/MaiorNumero.png)
+
 
 ##### Crie pelo menos mais 2 cálculos sobre o dataset e apresente um em formato de lista e outro em formato de valor
 
