@@ -46,7 +46,7 @@ print("O número de aplicativos com classificação Mature 17+ é " + str(numero
 
 ```
 
-![Categorias](../Evidencias/maisCaro.png)
+![Categorias](../Evidencias/ContentRating.png)
 
 #### Top 10 por número de reviews
 
