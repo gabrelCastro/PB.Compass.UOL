@@ -42,9 +42,13 @@ Nessa etapa, foi basicamente fazer uma análise no pandas com os dados.
 
 - Exercício 4: Primeiro eu fiz eu agrupei o dataFrame pelo artista(método groupby), depois eu peguei o somatório do "Actual gross"(método sum). Peguei a contagem de valores que cada artista aparece e juntei com o somatório. Depois, apenar ordenei e peguei o primeiro.
 
+![Imagem](../Desafio/volume/Q4.png)
+
 ---
 
 - Exercício 5: Agrupei por artista(método groupby), fiz o somatório da quantidade de shows(método sum), ordenei e peguei os 5 primeiros
+
+![Imagem](../Desafio/volume/Q5.png)
 
 ```
 resultadoEx5 = dataFrame.groupby("Artist")["Shows"].sum().sort_values(ascending=False).iloc[0:5]
