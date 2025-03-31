@@ -25,6 +25,16 @@ Nessa etapa, foi pedido apenas para criar um container no docker executando o ar
 
 ```
 
+---
+
+Comando no shell
+
+```
+    docker build .
+    docker run -it <idImagem>
+
+```
+
 ### ETAPA 2
 
 [Arquivos](./Exercicios/etapa2/)
@@ -42,6 +52,16 @@ while(1): # Executa infinito o código até o container ser fechado
     sha1 = hashlib.sha1(string.encode()) # faz o hash dos dados
 
     print(sha1.hexdigest()) # mostra o hash
+
+```
+
+---
+
+Comando no shell
+
+```
+    docker build .
+    docker run -it <idImagem>
 
 ```
 
