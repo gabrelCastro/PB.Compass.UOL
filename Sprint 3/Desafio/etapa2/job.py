@@ -64,7 +64,7 @@ artista = resultado["Artist"]
 resultadoEx4 = dataFrame[dataFrame["Artist"] == artista][["Actual gross","Start year","Tour title"]]
 
 plt.plot(resultadoEx4["Start year"],resultadoEx4["Actual gross"])
-plt.title("Faturamento por ano")
+plt.title("Faturamento por ano "+ artista)
 plt.xlabel("Ano")
 plt.ylabel("Faturamento")
 plt.savefig("../volume/Q4.png") 
