@@ -48,7 +48,7 @@ while(1): # Executa infinito o código até o container ser fechado
 
 # Evidências
 
-[Fotos de Confirmação](./Exercicios/Evidencias)
+[Fotos de Confirmação](./Evidencias)
 
 
 
