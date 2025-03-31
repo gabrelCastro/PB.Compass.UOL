@@ -14,11 +14,36 @@
 
 Nessa etapa, foi pedido apenas para criar um container no docker executando o arquivo python. Portanto, não tiveram muitos detalhes, apenas um Dockerfile bem simples.
 
+```
+    FROM python     # Pega a imagem do python 
+
+    WORKDIR /app    # Prepara um diretório de trabalho
+
+    COPY . /app     # Copia os arquivos para o diretório 
+
+    CMD ["python3","carguru.py"] # Executa o comando
+
+```
+
 ### ETAPA 2
 
 [Arquivos](./Exercicios/etapa2/)
 
-Nessa etapa, foi pedido para fazer um código que fizesse a criptografia de uma string e mostrasse no terminal. Também teve um código bem simples e um Dockerfile bastante parecido com a etapa anterior.
+Nessa etapa, foi pedido para fazer um código que fizesse a criptografia de uma string e mostrasse no terminal. Também teve um código bem simples e um Dockerfile bastante parecido com a etapa anterior. O que fiz foi basicamente fazer o código da criptografia utilizando
+
+
+```
+import hashlib
+
+while(1): # Executa infinito o código até o container ser fechado
+
+    string = input("Digite uma string: ") # Captura a String
+
+    sha1 = hashlib.sha1(string.encode()) # faz o hash dos dados
+
+    print(sha1.hexdigest()) # mostra o hash
+
+```
 
 
 # Evidências

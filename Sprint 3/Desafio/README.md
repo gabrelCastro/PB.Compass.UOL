@@ -61,6 +61,8 @@ Nesta etapa, foi feita o preparo e a criação dos containers e o docker-compose
 
 Olhando para as duas aplicações, claramente a segunda depende do resultado da primeira. Dessa forma, o volume do docker é um bind mount na pasta [volume](./volume/), onde a primeira aplicação cria os dados e a segunda utiliza. No docker-compose a segunda etapa(análise dos dados) é dependente da etapa1(ETL).
 
+OBS: Não achei necessário criar uma pasta requirements.txt, pois são poucos pacotes para instalação no pip
+
 ### Etapa 3
 
 ```
