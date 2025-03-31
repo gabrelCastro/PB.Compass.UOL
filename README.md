@@ -48,9 +48,3 @@ Olá, meu nome é <b>Gabriel Ferreira de Castro!</b>
 4. ...
 
 ___
-
-
-# Dicas
-
-- [Mark Down - Basic Syntax](https://www.markdownguide.org/basic-syntax/)
-- [Github - Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)

@@ -1,0 +1,14 @@
+services:
+  etapa1:
+    build:
+      context: ./etapa1
+    volumes:
+      - ./volume:/volume
+    
+  etapa2:
+    depends_on:
+      - etapa1
+    build:
+      context: ./etapa2
+    volumes:
+        - ./volume:/volume

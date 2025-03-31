@@ -1,0 +1,9 @@
+Q1:
+--- A artista que mais aparece na lista e também possui a maior média de faturamento bruto é a Taylor Swift com 4 aparições e média de 381 milhões
+Q2:
+--- A turnê com maior média de faturamento bruto é a Renaissance World Tour com média de 10 milhões
+Q3:
+As 3 artistas que possuem o show mais lucrativo por apresentação são:
+  --- Taylor Swift com a turnê The Eras Tour com um valor médio de 13 milhões
+  --- Beyoncé com a turnê Renaissance World Tour com um valor médio de 10 milhões
+  --- Taylor Swift com a turnê Reputation Stadium Tour com um valor médio de 7 milhões
