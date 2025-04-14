@@ -89,7 +89,7 @@ Para resolução desse exercício, o principal fator foi lembrar e entender as w
 - Primeiro eu fiz um CASE WHEN para categorizar as decadas de acordo com a data de nascimento (SUBQUERY):
     ```
         SELECT 
-        nome,
+        nome,total,
         CASE 
             WHEN ano >= 1950 AND ano < 1960 THEN 'Década de 1950'
             WHEN ano >= 1960 AND ano < 1970 THEN 'Década de 1960'
@@ -107,7 +107,7 @@ Para resolução desse exercício, o principal fator foi lembrar e entender as w
         SELECT 
             nome,
             decada,
-            COUNT(*) AS total
+            SUM(total) AS doTotal
         FROM nomes_com_decada
         GROUP BY nome, decada
     ```
@@ -116,8 +116,8 @@ Para resolução desse exercício, o principal fator foi lembrar e entender as w
         SELECT 
         nome,
         decada,
-        total,
-        ROW_NUMBER() OVER (PARTITION BY decada ORDER BY total DESC) AS posicao
+        doTotal,
+        ROW_NUMBER() OVER (PARTITION BY decada ORDER BY doTotal DESC) AS posicao
         FROM frequencia_por_nome_decada
     ```
 - Peguei os nomes com numero menor que 3 (Query Principal):
@@ -125,10 +125,10 @@ Para resolução desse exercício, o principal fator foi lembrar e entender as w
         SELECT 
         nome,
         decada,
-        total
+        doTotal
         FROM top3_por_decada
         WHERE posicao <= 3 and decada <> ''
-        ORDER BY decada, total DESC;
+        ORDER BY decada, doTotal DESC;
     ```
 
 ##### Executando a query
