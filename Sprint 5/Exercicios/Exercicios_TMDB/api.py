@@ -11,7 +11,7 @@ url = f"https://api.themoviedb.org/3/movie/top_rated?api_key={api_key}&amp;langu
 
 response = requests.get(url)
 data = response.json()
-filmes = [0]
+filmes = []
 
 for movie in data['results']:
     df = {

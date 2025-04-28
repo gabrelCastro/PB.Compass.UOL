@@ -41,24 +41,24 @@ df1 = pd.read_csv(buffer, sep="|")
 
 tem = False
 i = 0
-for t in range(5):
-    definitivo = []
-    while len(definitivo) < 95:
+for t in range(5): # 5 arquivos com 100 filmes aproximadamente
+    definitivo = [] # Criando uma lista para armazenar os filmes
+    while len(definitivo) < 95: # Enquanto a lista não tiver 95 filmes aproximadamente
         url = "https://api.themoviedb.org/3/discover/movie?include_adult=true&include_video=false&page={}&sort_by=revenue.desc&with_genres={}%7C{}".format(str(1+i),idAction, idAdventure)
         response = requests.get(url,headers=headers)
         resultados = response.json()['results']
-        for y in resultados:
+        for y in resultados: # Para cada filme retornado
             tem = False
             for x in df1['tituloOriginal']:
-                if(x == y['original_title']):
+                if(x == y['original_title']): # Verifica se o filme já existe na lista
                     tem = True
-                    break
-            if(tem == False):
+                    break # Se o filme já existe, não adiciona e para o loop procurando ele
+            if(tem == False): # Se o filme não existe na lista, adiciona
                 definitivo.append(y)
             
-        i+=1
+        i+=1 # Incrementa o número da página
 
-    json_string = json.dumps(definitivo, ensure_ascii=False)
+    json_string = json.dumps(definitivo, ensure_ascii=False) # Converte a lista de filmes para JSON
 
     s3.put_object(Bucket='data-lake-do-gabriel-castro', Key='RAW/LOCAL/JSON/Movies/{}/{}/{}/json{}.json'.format(datat.year, datat.month, datat.day,t), Body=json_string.encode('utf-8'))
 
