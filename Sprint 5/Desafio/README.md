@@ -180,7 +180,7 @@ for t in range(5): # 5 arquivos com 100 filmes aproximadamente
 
 ```
 
-**OBS: É IMPORTANTE LEMBRA QUE FOI CRIADA UMA VARIÁVEL DE AMBIENTE PARA O TOKEN DA API TMDB NO LAMBDA**
+**OBS: É IMPORTANTE LEMBRAR QUE FOI CRIADA UMA VARIÁVEL DE AMBIENTE PARA O TOKEN DA API TMDB NO LAMBDA**
 
 ![](../Evidencias/variaveisAmbiente.png)
 
@@ -208,10 +208,10 @@ RUN yum -y clean all
 - Dando build no Dockerfile
 ![](../Evidencias/buildandoDocker.png)
 
-- Instalando as bibliotecas necessária apos o run do container
+- Instalando as bibliotecas necessária após o run do container
 ![](../Evidencias/instalandoLibs.png)
 ![](../Evidencias/instalandoboto3.png)
-- Depois de "zipada" o arquivo foi copiado para fora do container
+- Depois de "zipado" o arquivo foi copiado para fora do container
 ![](../Evidencias/layerCopiada.png)
 
 
@@ -252,4 +252,4 @@ RUN yum -y clean all
 
 ![](../Evidencias/conteudoJson.png)
 
-As linhas selecionadas representam um dos filmes adicionados
+As linhas selecionadas representam um dos filmes adicionados, **mostrando sucesso no load dos dados**.
