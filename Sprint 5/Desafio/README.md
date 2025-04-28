@@ -253,3 +253,17 @@ RUN yum -y clean all
 ![](../Evidencias/conteudoJson.png)
 
 As linhas selecionadas representam um dos filmes adicionados, **mostrando sucesso no load dos dados**.
+
+
+
+## Perguntas a serem respondidas
+
+1- Existe uma relação entre os filmes possuirem conteudo adulto e sua nota?
+
+2- Quais são os filmes com maior quantidade de votos?
+
+3- Quais são os 5 filmes mais bem avaliados?
+
+4- A relação entre o tamanho do título e a popularidade do filme
+
+5- Qual o filme mais bem avaliado e que tenha a maior média de votos.

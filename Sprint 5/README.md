@@ -51,6 +51,12 @@
 
 O código se baseou em conceitos de extrema importância do Spark
 
+- A função **map** pega cada elemento e o coloca junto com o par 1, representando uma unidade.
+- A função **filter**, como o próprio nome já diz, filtra os dados. Ela recebe um array e retorna um subconjuto. Nesse caso, as strings vazias retornam false, portanto são tiradas do array
+- A função **reduceByKey** pega elementos de chave igual e realiza alguma operação, nesse caso a soma. Essa soma é com o número que representa sua unidade. Vamos supor que a palavra "teste" já foi achada 20 vezes, seu par seria ("teste",20), se encontrasse mais uma com a mesma chave, seria 20 + 1 = 21 e assim em diante.
+- A função **sortBy** apenas ordena a partir do número de unidades do par
+
+
 ```
 # 4) Pipeline RDD -------------------------------------------------------------
 contagem = (
@@ -62,6 +68,7 @@ contagem = (
               .sortBy(lambda par: par[1], ascending=False)
            )
 ```
+
 
 Além disso, para pegar os dados do README, foi utilizado um token gerado pelo GitHub
 

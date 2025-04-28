@@ -43,7 +43,7 @@ def quebrar_em_palavras(linha):
 # 4) Pipeline RDD -------------------------------------------------------------
 contagem = (sc.textFile(ARQUIVO_FONTE)     # lê o arquivo em N partições
               .flatMap(quebrar_em_palavras) # quebra cada linha em palavras
-              .filter(lambda p: p)          # remove vazios (evita '' gerado pelo split)
+              .filter(lambda p: p)          # remove vazios (evita '' gerado pelo split) toda string vazia retorna False
               .map(lambda p: (p, 1))        # vira par (palavra, 1)
               .reduceByKey(lambda a, b: a+b) # soma as ocorrências
               .sortBy(lambda par: par[1], ascending=False)
