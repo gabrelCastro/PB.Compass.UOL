@@ -78,6 +78,11 @@ except Exception as e:
 
 ![](../Evidencias/criandoImagemLoad.png)
 
+
+##### RUN no Container
+
+        sudo docker run -it -v "$PWD/csv":/app/csv loadtos3
+
 ###### Enviando arquivos
 ![](../Evidencias/EnviandoArquivos.png)
 
