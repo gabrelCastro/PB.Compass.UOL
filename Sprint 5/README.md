@@ -1,10 +1,10 @@
 # Resumo (Feedback dos cursos)
 
-**Fundamentals of Analytics:** Esse curso foi bastante importante para mim em razão ao fato de que ele reforça conteúdos já aprendidos, como ETL, por exemplo. Além disso, ferramentas extremamente úteis e suas formas de uso são apresentadas de forma bem clara, como o uso do Glue, ferramenta para limpar e normalizar os dados para prepará-los para análise, em conjunto com outros serviços da AWS. Aprender sobre os 5 V's(Volume, Variedade, Velocidade, Veracidade e Valor) e como a AWS ajuda a garantí-los, e explicar como esse processo é feito, foi essencial.
+**Fundamentals of Analytics**: Este curso foi muito importante para mim, pois reforçou conteúdos que eu já havia estudado, como ETL. Além disso, apresentou, de forma clara, ferramentas extremamente úteis e suas formas de uso, como o AWS Glue — empregado para limpar e normalizar dados antes da análise — em conjunto com outros serviços da AWS. Aprender sobre os 5 V’s (Volume, Variedade, Velocidade, Veracidade e Valor) e compreender como a AWS contribui para cada um deles foi essencial.
 
-**Introduction to Amazon Athena:** Apesar do Amazon Athena já ter sido apresentado em outras Sprints, esse curso foi bastante importante para relembrar conceitos e mostrar novas possibilidades do Amazon Athena. Para mim, o curso como um todo, por mostrar desde a criação do s3 para armazenar dados e logs até o acesso ao histórico de query, é bastante importante.
+**Introduction to Amazon Athena**: Embora o Amazon Athena já tivesse sido abordado em outras sprints, este curso foi fundamental para relembrar conceitos e explorar novas possibilidades da ferramenta. Considero especialmente valioso o fato de o conteúdo cobrir todo o fluxo, desde a criação de um bucket no S3 para armazenar dados e logs até o acesso ao histórico de consultas.
 
-**Serverless Analytics:** Para mim, esse curso não foi tão didático. Levando em consideração tanto aulas da AWS dessa sprint, quanto das sprints passadas. Além disso, para mim e outros bolsista que conversei, a legenda em português do curso não está funcionando. Apesar disso, o curso oferece conteúdo relevante, mostrando como é possível utilizar o Amazon QuickSight.
+**Serverless Analytics**: Na minha opinião, este curso não foi tão didático quanto os das sprints anteriores. Eu e outros bolsistas percebemos que as legendas em português não estão funcionando corretamente. Ainda assim, o conteúdo é relevante, pois demonstra como utilizar o Amazon QuickSight.
 
 
 # Exercícios
@@ -12,7 +12,7 @@
 
 # Apache Spark (Contador de palavras)
 
-##### OBS: Para que houvesse uma boa comprovação dos resultados e menos redundância nas capturas de tela, cada uma delas tem alguma referência de que estou realizando o procedimento. Nas telas do console, geralmente é possível ver meu usuário. Nas telas de terminal, é possível ver meu usuário do computador. 
+##### OBS: Para comprovar os resultados e evitar redundância nas capturas de tela, cada imagem contém algum indício de que sou eu quem está executando o procedimento. Nas telas do console, normalmente aparece meu usuário da AWS; nas telas do terminal, vê-se o usuário do meu sistema operacional.
 
 [Arquivos utilizados](./Exercicios/ApacheSpark_Contador_de_palavras/)
 
@@ -28,7 +28,7 @@
 
         sudo docker run -it -p 8888:8888 jupyter/all-spark-notebook
 
-- O comando -it para já abrir o terminal e o -p para poder fazer o tunelamento das portas(8888 do container para 8888 do sistema operacional da máquina)
+- O comando -it para já abrir o terminal, e o -p para ser possível o tunelamento das portas(8888 do container para 8888 do sistema operacional da máquina)
 
 
 #### Entrando na página web do servidor web que o spark gera:
