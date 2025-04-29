@@ -36,7 +36,7 @@
 ![Upload da Imagem](./Exercicios/ApacheSpark_Contador_de_palavras/Evidencias/jupiterLab.png)
 
 
-É possível notar que o tunelamento funcionou corretamente, umas vez que o container está enviando os dados de sua porta 8888 para a porta 8888 do S0, de acordo com a URL.
+É possível notar que o tunelamento funcionou corretamente, umas vez que o container está enviando os dados de sua porta 8888 para a porta 8888 do SO, de acordo com a URL.
 
 
 #### Conectando ao terminal
