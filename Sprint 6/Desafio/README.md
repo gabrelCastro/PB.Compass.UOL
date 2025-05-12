@@ -180,3 +180,7 @@ Depois que os dados foram transformados com sucesso e carregados na trusted zone
 
 ![](../Evidencias/EvidenciasGerais/ConsultaTMDB.png)
 
+
+# Resumo do Desafio
+
+![](../Evidencias/EvidenciasGerais/resumo.png)
