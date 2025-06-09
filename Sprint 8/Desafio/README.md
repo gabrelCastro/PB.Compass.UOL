@@ -20,7 +20,10 @@ Um dos objetivos da Sprint anterior era a realização da modelagem dimensional.
 
 **OBS: Como não é o objetivo dessa Sprint, o código não será mostrado**
 
-Dados corretos no S3 
+Modelagem nova:
+![](../Evidencias/modelagem.png)
+
+Dados corretos no S3: 
 ![](../Evidencias/corrigindoDados.png)
 
 
@@ -240,8 +243,21 @@ Nesse caso, o gráfico de dispersão serviu como uma luva, pois permite analisar
 
 ---
 
+# Resumo do que foi feito no Projeto
+
+![](../Evidencias/Desafio-FilmesSeries-Completo.png)
 
 
+1. **Camada RAW**
+    - Fazer o upload dos dados On premisse(CSV) para o S3(Simples Store Service) na camada RAW.
+    - Utilizando o AWS Lambda, requisitar dados(filmes) da API do TMDB que existam nos dados On premisse, também para a camada RAW.
 
+2. **Camada Trusted**
+    - Através do Glue, utilizando o Spark, fazer uma limpeza dos dados encontradados. S3 -> Job -> Crawler -> Glue Data Catalog.
 
+3. **Camada Refined**
+    - Através do Glue, utilizando o Spark, fazer a modelagem dimensional dos dados e juntar as duas bases. S3 -> Job -> Crawler -> Glue Data Catalog.
+
+3. **QuickSight e Dashboard**
+    - Através dos dados que estão no Glue Data Catalog, é possível utilizar esses dados no QuickSight, ferramenta de BI da AWS. Essa ferramenta permitiu a criação do dashboard, visto nesta última etapa.
 

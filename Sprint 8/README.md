@@ -1,9 +1,31 @@
 # Resumo (Feedback dos cursos)
 
-**Modelagem de Dados para Data Warehouse:** Gostei de como o curso foi direto ao ponto: explicou fatos, dimensões e o esquema estrela com exemplos simples, o que me ajudou a entender quando vale a pena integrar os dados ou mantê-los normalizados. Senti falta de mais exercícios guiados e acredito que um projeto final — como montar um DW em miniatura — teria fechado o conteúdo com chave de ouro. Ainda assim, foi um aprendizado bastante relevante.
+**Complete Introduction to Amazon QuickSight:** O curso é excelente, pois permite que uma pessoa que nunca teve contato com o QuickSight ou qualquer outra ferramenta de BI tenha uma boa experiência. Gostei bastante do foco que foi dado em tabelas, uma vez que elas são muito importantes e ponto de partida para o entendimento de qualquer outra ferramenta presente do QuickSight.  
+**Amazon QuickSight - Getting Started:** Como todos os cursos que a AWS oferece, mostrou um conteúdo detalhado e muito bem escrito sobre o que é preciso saber sobre o QuickSight, principalmente sobre seus elementos visuais, como o KPI e AutoGraph.
 
-**Amazon Q Developer for Programmers and DevOps AWS AI Coding**: O curso de Amazon Q para desenvolvedores e DevOps foi bem prático: demonstrações curtas mostraram a IA gerando e refatorando código, além de encaixar tudo em um pipeline CI/CD. Gostei muito da parte de governança de prompts e restrição de permissões, que condiz com o dia a dia de quem lida com produção. Senti falta de laboratórios mais longos para praticar políticas e métricas em cenários reais. No geral, terminei com uma noção clara de onde o Amazon Q se encaixa no ecossistema AWS.
 
+# Laboratório
+
+1-**Entrar no QuickSight**
+![](./Evidencias/exercicios/quickSightFuncionando.png)
+
+2-**Ir até a seção de adicionar conjunto de dados e clicar em "Novo conjunto de dados"**
+![](./Evidencias/exercicios/indoNovoConjunto.png)
+
+3-**Escolher a opção csv e adicionar o arquivo**
+![](./Evidencias/exercicios/escolhendoArquivo.png)
+
+4-**Mostrando dados para upload**
+![](./Evidencias/exercicios/DadosNoUpload.png)
+
+5-**Mostrando dados para upload**
+![](./Evidencias/exercicios/EscolhendoFormato.png)
+
+6-**Criando gráfico e escolhendo a opção de mês**
+![](./Evidencias/exercicios/escolhendoMes.png)
+
+7-**Exercício concluído**
+![](./Evidencias/exercicios/graficoCriado.png)
 
 # Evidências
 
